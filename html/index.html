@@ -3,34 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
     <title>Personal Web - Dainer</title>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>Dainer Samuel Florian Arroyo <span>7502210020</span></h1>
-        <h2>Mi página web personal.</h2>
-        <img src="#" alt="Imagen de Portada">
+        <h1 class="logo"><a href="#">DainerDev</a></h1>
+        
+        <!-- SlideBar -->
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">Formacion Academica</a>
+            <a href="#">Exp Lab</a>
+            <a href="#">Galeria Fotos</a>
+            <a href="#">Hobbies</a>
+            <a href="#">Amigos Webs</a>
+      </nav>
     </header>
 
-    <!-- SlideBar -->
-    <div class="sidebar" style="width:25%;right:0">
-        <h5 class="bar-item">Menu</h5>
-        <a href="#" class="bar-item button">Datos Personales</a>
-        <a href="#" class="bar-item button">Formacion Academica</a>
-        <a href="#" class="bar-item button">Exp Lab</a>
-        <a href="#" class="bar-item button">Galeria Fotos</a>
-        <a href="#" class="bar-item button">Hobbies</a>
-        <a href="#" class="bar-item button">Amigos Webs</a>
-      </div>
-      
-    <div style="margin-right:25%">
-    <!-- Footer -->
-    <footer>
-        <ul>
-            <li>Contacto: <a href="#">florianarroyo15@gmail.com</a></li>
-            <li><a href="#">Redes Sociales</a></li>
-        </ul>
-    </footer>
+    <!-- Home Screen -->
+    <section class="home">
+        <div class="home-content">
+            <h1>Dainer Samuel Florian Arroyo<br>
+                <span>7502210020</span>
+            </h1>
+            <h2>Mi página web personal.</h2>
+            <img src="#" alt="Imagen de Portada">
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <br>
+            Contacto: <br> 
+            <a href="#"><i class='bx bx-mail-send'></i> florianarroyo15@gmail.com</a></li>
+            <div class="icon-content">
+                <div>
+                    <a id="git" href="#" class="span-tooltip" target="_blank" style="color: #24262a;">
+                        <i class='bx bxl-github'></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <div>
+                    <a id="yt" href="#" class="span-tooltip" target="_blank" style="color: #ff0000;">
+                        <i class='bx bxl-youtube' ></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+                <div>
+                    <a id="face" href="#" class="span-tooltip" target="_blank" style="color: #1965fc;">
+                        <i class='bx bxl-facebook-circle' ></i>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+                <div>
+                    <a id="insta" href="#" class="span-tooltip" target="_blank" style="color: #fc199d;">
+                        <i class='bx bxl-instagram' ></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <div>
+                    <a id="linkedin" href="#" class="span-tooltip" target="_blank" style="color: #0274b3;">
+                        <i class='bx bxl-linkedin-square' ></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </section>    
 </body>
 </html>
