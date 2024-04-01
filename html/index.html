@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Personal Web - Dainer</title>
 </head>
+
 <body>
     <!-- Sidebar -->
     <nav class="sidebar close">
         <!-- Sidebar Header -->
-       <header>
+        <header>
             <div class="logo-text">
                 <span class="image">
                     <a href="#"><img src="img/logo2.png" alt="logo"></a>
@@ -21,137 +23,196 @@
                     <span class="profession">Web developer</span>
                 </div>
             </div>
-            
             <i class='bx bx-chevron-right altern'></i>
-       </header>
+        </header>
 
-       <!-- Sidebar Container -->
-       <div class="menu-bar">
-        <div class="menu">
-            <ul class="menu-links">
-                <li class="nav-link">
-                    <a href="#home">
-                        <i class='bx bx-home icon'></i>
-                        <span class="text nav-text">Inicio</span>
-                    </a>
+        <!-- Sidebar Container -->
+        <div class="menu-bar">
+            <!-- Sidebar Menu -->
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#home">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Acerca de mí</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-book-bookmark icon'></i>
+                            <span class="text nav-text">Formación</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-timer icon'></i>
+                            <span class="text nav-text">Experiencia Laboral</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-carousel icon'></i>
+                            <span class="text nav-text">Momentos</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-list-ul icon'></i>
+                            <span class="text nav-text">Hobbies</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-user-detail icon'></i>
+                            <span class="text nav-text">Amigos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Sidebar bottom -->
+            <div class="bottom-content">
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
                 </li>
-                <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bx-user icon'></i>
-                        <span class="text nav-text">Acerca de mí</span>
-                    </a>
-                </li>
-                <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bx-book-bookmark icon'></i>
-                        <span class="text nav-text">Formación</span>
-                    </a>
-                </li>
-                <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bx-timer icon'></i>
-                        <span class="text nav-text">Experiencia Laboral</span>
-                    </a>
-                </li>
-                <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bxs-carousel icon'></i>
-                        <span class="text nav-text">Momentos</span>
-                    </a>
-                </li>
-                <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bx-list-ul icon'></i>
-                        <span class="text nav-text">Hobbies</span>
-                    </a>
-                </li>
-                <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bxs-user-detail icon'></i>
-                        <span class="text nav-text">Amigos</span>
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
-
-        <!-- Sidebar bottom -->
-        <div class="bottom-content">
-            <li class="mode">
-                <div class="sun-moon">
-                    <i class='bx bx-moon icon moon'></i>
-                    <i class='bx bx-sun icon sun'></i>
-                </div> 
-                <span class="mode-text text">Dark Mode</span>
-
-                <div class="toggle-switch">
-                    <span class="switch"></span>
-                </div>
-            </li>
-        </div>
-       </div>
     </nav>
 
-    <!-- Home Screen -->
-    <section class="home">
+    <!-- Section Home -->
+    <section class="home hidden">
         <div class="home-content">
             <div class="text">
                 <h1>Dainer Samuel Florian Arroyo<br>
-                <span>7502210020</span>
+                    <span>7502210020</span>
                 </h1>
                 <h2>Mi página web personal.</h2>
-            </div>            
+            </div>
             <div class="img-home">
                 <img src="img/foto fondo blanco.jpg" alt="Imagen de Portada">
             </div>
         </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <div id="contact" class="contact">
-                Contáctame: <br> 
-                <a href="mailto:florianarroyo15@gmail.com"><i class='bx bx-mail-send'></i> florianarroyo15@gmail.com</a><br></li>
-            </div>
-            <div id="redes" class="icon-content">
-                <div>
-                    <a id="git" href="mailto:florianarroyo15@gmail.com" class="span-tooltip" style="color: #24262a;">
-                        <i class='bx bxl-gmail'></i>
-                        <span>Email</span>
-                    </a>
-                </div>
-                <div>
-                    <a id="git" href="https://github.com/Dainerdev" class="span-tooltip" target="_blank" style="color: #24262a;">
-                        <i class='bx bxl-github'></i>
-                        <span>GitHub</span>
-                    </a>
-                </div>
-                <div>
-                    <a id="yt" href="https://www.youtube.com/channel/UCmEilB5ED6eFttUs7E88RYQ" class="span-tooltip" target="_blank" style="color: #ff0000;">
-                        <i class='bx bxl-youtube' ></i>
-                        <span>YouTube</span>
-                    </a>
-                </div>
-                <div>
-                    <a id="face" href="https://www.facebook.com/profile.php?id=100091168928807" class="span-tooltip" target="_blank" style="color: #1965fc;">
-                        <i class='bx bxl-facebook-circle' ></i>
-                        <span>Facebook</span>
-                    </a>
-                </div>
-                <div>
-                    <a id="insta" href="https://www.instagram.com/im.astrom/" class="span-tooltip" target="_blank" style="color: #fc199d;">
-                        <i class='bx bxl-instagram' ></i>
-                        <span>Instagram</span>
-                    </a>
-                </div>
-                <div>
-                    <a id="linkedin" href="https://www.linkedin.com/in/dainer-florian-arroyo-8438772b2" class="span-tooltip" target="_blank" style="color: #0274b3;">
-                        <i class='bx bxl-linkedin-square' ></i>
-                        <span>LinkedIn</span>
-                    </a>
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-container">
+            <div class="row">
+                <div class="sect-title">
+                    <h3>Acerca de mí.</h3>
+                    <div class="line"></div>
                 </div>
             </div>
-        </footer>
-    </section> 
-    
+            <div class="about-text">                
+                <div class="details">
+                    <p>Mi nombre es Dainer Samuel Florian Arroyo y estudio <span>Ingeniería de Software</span>.
+                        Tengo 18 años, nací el 05 de Junio del 2005 en Cartagena de Indias. Me
+                        entusiasma el desarrollo de software. Desde joven, he demostrado gran
+                        interés por la informática y la programación, por lo que decidí
+                        emprender mi formación dentro de una carrera de este impresionante campo.
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <ul>
+                        <h3>Más información:</h3>
+                        <li>
+                            <span class="info">Nacionalidad: </span>Colombiano.
+                        </li>
+                        <li>
+                            <span class="info">Dirección: </span>Urb. Los Cerezos.                        
+                        </li>
+                        <li>
+                            <span class="info">Teléfono: </span>+57 311 714 1048
+                        </li>
+                        <li>
+                            <span class="info">Estado: </span>En busca de Empleo.
+                        </li>
+                        <li>
+                            <span class="info">E-mail: </span><a href="mailto:florianarroyo15@gmail.com">florianarroyo15@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>               
+            </div>            
+        </div>
+    </section>
+    <!-- <div class="info">
+        <h2>Educación y Formación.</h2>
+        <p>Completé mis estudios de primaria y secundaria en el Colegio Militar Almirante 
+            Colón. En todo este recorrido educativo, las matemáticas y la informática lograron 
+            captar mi atención, demostrando así mi interés y dedicación por seguir aprendiendo.
+        </p>
+    </div>
+    <div class="uni">
+        <h2>Inicio de la Carrera Ingeniería de Software.</h2>
+        <p></p>
+    </div> -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div id="contact" class="contact">
+            <span>Contáctame: <br></span>
+            <a href="mailto:florianarroyo15@gmail.com"><i class='bx bx-mail-send'></i> florianarroyo15@gmail.com</a><br>
+            </li>
+        </div>
+        <div id="redes" class="icon-content">
+            <div>
+                <a id="git" href="mailto:florianarroyo15@gmail.com" class="span-tooltip" style="color: #24262a;">
+                    <i class='bx bxl-gmail'></i>
+                    <span>Email</span>
+                </a>
+            </div>
+            <div>
+                <a id="git" href="https://github.com/Dainerdev" class="span-tooltip" target="_blank"
+                    style="color: #24262a;">
+                    <i class='bx bxl-github'></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div>
+                <a id="yt" href="https://www.youtube.com/channel/UCmEilB5ED6eFttUs7E88RYQ" class="span-tooltip"
+                    target="_blank" style="color: #ff0000;">
+                    <i class='bx bxl-youtube'></i>
+                    <span>YouTube</span>
+                </a>
+            </div>
+            <div>
+                <a id="face" href="https://www.facebook.com/profile.php?id=100091168928807" class="span-tooltip"
+                    target="_blank" style="color: #1965fc;">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <span>Facebook</span>
+                </a>
+            </div>
+            <div>
+                <a id="insta" href="https://www.instagram.com/im.astrom/" class="span-tooltip" target="_blank"
+                    style="color: #fc199d;">
+                    <i class='bx bxl-instagram'></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+            <div>
+                <a id="linkedin" href="https://www.linkedin.com/in/dainer-florian-arroyo-8438772b2" class="span-tooltip"
+                    target="_blank" style="color: #0274b3;">
+                    <i class='bx bxl-linkedin-square'></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

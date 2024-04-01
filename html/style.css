@@ -50,12 +50,19 @@ body.dark {
 
 /* Diseño de las secciones */
 section {
+    position: relative;
+    left: 250px;
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    width: calc(100% -250px);
+    transition: var(--trans-5s);
 }
 /* Diseño de la seccion "home" */
 section.home .text {
     color: var(--text-color);
+}
+
+.hidden {
+    display: none !important;
 }
 
 /* 
@@ -394,6 +401,84 @@ body.dark .switch::before {
     bottom: calc(100% + 6px);
 }
 
+/* 
+    About Section
+*/
+
+.about {
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    background: var(--body-color);
+}
+.about-container {
+    position: absolute;
+    left: 20%;    
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.sect-title {
+    max-width: 75%;
+    color: var(--text-color);
+}
+.sect-title h3 {
+    left: 15%;
+    font-size: 70px;
+    font-weight: 600;
+    position: relative;
+}
+.about-container .line {
+    width: 75%;
+    height: 2px;
+    background: #51B872;
+}
+
+.about-text {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+    width: 75%;
+    color: var(--text-color);
+}
+.details p span {
+    color: #51B872;
+}
+
+.about-text .contact-info {    
+    position: absolute;
+    margin-top: 40px;    
+    left: 7%;
+}
+.about-text .contact-info li {
+    margin: 10px;
+    padding-left: 20px;
+    list-style: none;
+}
+.about-text .contact-info ul {
+    margin-top: 20px;
+}
+.about-text .contact-info a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+.about-text .contact-info span {
+    font-weight: 600;
+}
+
+.about .about-text .personal-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    background-color: #51B872;
+}
+.about .about-text .skills {
+    flex: 0 0 40%;
+    max-width: 40%;
+    background-color: #3697f8;
+}
+
+/* 
+    Footer
+*/
 
 footer {
     position: absolute;
@@ -408,6 +493,10 @@ div[id="contact"] {
     margin-left: 15%;
     float: left;
     padding: 3vh;
+}
+
+footer span {    
+    font-weight: 600;
 }
 
 div[id="redes"] {
