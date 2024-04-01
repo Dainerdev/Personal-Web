@@ -34,6 +34,7 @@
 /* Diseño para el cuerpo de la pagina */
 body {
     min-height: 100vh;
+    overflow-x: hidden;
     transition: var(--trans-5s);
     background: var(--body-color);
 }
@@ -299,45 +300,42 @@ body.dark .switch::before {
 
 .home {
     position: relative;
-    left: 88px;
+    width: calc(95% + 11px);
+    height: 100vh;
+    left: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 10%;
-    height: 100vh;
-    width: calc(100% -250px);
-    background: var(--body-color);
     transition: var(--trans-5s);
 }
-.sidebar.close ~ .home {
-    left: 88px;    
-    width: calc(100% -88px);
-}
-
-
 .home-content {
     width: 100%;
     height: 600px;
     padding: 3vh;
+    left: 50%;
 }
-
 .home-content h1 {
+    position: relative;
     font-size: 56px;
     font-weight: 650;
-    margin-top: 5%;
 }
 
 .home-content h2 {
+    position: relative;
+    margin-top: 20px;
     font-size: 32px;
     font-weight: 500;
 }
 
 .home-content img {
-    width: 25%;
-    height: auto;
+    position: relative;
+    display: flex;
     float: right;
-    margin-top: -20%;
-    border-radius: 40px;
+    width: 20%;
+    height: auto;
+    margin-top: -15%;
+    border-radius: 20px;
     box-shadow: 0 0 20px 5px var(--shadow-color);
 }
 
@@ -357,13 +355,14 @@ body.dark .switch::before {
     min-height: 100vh;
     top: 0;
     left: 0;
-    background: var(--body-color);
 }
 .about-container {
+    width: 150vh;
+    height: 70vh;
     position: absolute;
     left: 20%;    
     padding-top: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 70px;   
 }
 .sect-title {
     max-width: 75%;
@@ -388,7 +387,8 @@ body.dark .switch::before {
     width: 75%;
     color: var(--text-color);
 }
-.details p span {
+
+.details p label {
     color: #51B872;
 }
 
@@ -409,7 +409,7 @@ body.dark .switch::before {
     text-decoration: none;
     color: var(--text-color);
 }
-.about-text .contact-info span {
+.about-text .contact-info label {
     font-weight: 600;
 }
 
@@ -431,7 +431,6 @@ body.dark .switch::before {
     min-height: 100vh;
     top: 0;
     left: 0;
-    background: var(--body-color);
 }
 .format .container {
     position: absolute;
@@ -479,7 +478,7 @@ body.dark .switch::before {
     left: 10%;
     width: 80%;
 }
-.stage span {
+.stage label {
     font-weight: 600;
 }
 .stage .univ a {
@@ -494,7 +493,6 @@ body.dark .switch::before {
     min-height: 100vh;
     top: 0;
     left: 0;
-    background: var(--body-color);
 }
 .labor .exp-container {
     position: absolute;
@@ -615,6 +613,7 @@ body.dark .switch::before {
     Hobbies Section
 */
 .hobbies {
+    margin-top: 120vh;
     min-height: 100vh;
     max-height: auto;
     top: 0;
@@ -649,7 +648,6 @@ body.dark .switch::before {
     background: #51B872;
 }
 .hobb-container .list {
-    margin-top: -5%;
     position: relative;
     display: flex;
     width: 90%;
@@ -677,21 +675,6 @@ body.dark .switch::before {
     height: 80px;
     margin: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 
     Footer

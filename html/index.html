@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Personal Web - Dainer</title>
+    <link rel="icon" href="img/logo2.png" type="image/png">
+    <title>Personal Web - Dainer Florian</title>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <header>
             <div class="logo-text">
                 <span class="image">
-                    <a href="#"><img src="img/logo2.png" alt="logo"></a>
+                    <a href="#Inicio"><img src="img/logo2.png" alt="logo"></a>
                 </span>
                 <div class="text header-text">
                     <span class="name">DainerDev</span>
@@ -32,37 +33,37 @@
             <div class="menu">
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="#home">
+                        <a href="#Inicio">
                             <i class='bx bx-home icon'></i>
                             <span class="text nav-text">Inicio</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#Acerca-de-mi">
                             <i class='bx bx-user icon'></i>
                             <span class="text nav-text">Acerca de mí</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#Formacion-Academica">
                             <i class='bx bx-book-bookmark icon'></i>
                             <span class="text nav-text">Formación</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#Experiencia-Laboral">
                             <i class='bx bx-timer icon'></i>
-                            <span class="text nav-text">Experiencia Laboral</span>
+                            <span class="text nav-text">Exp Laboral</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#Momentos-Casuales">
                             <i class='bx bxs-carousel icon'></i>
                             <span class="text nav-text">Momentos</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#Hobbies">
                             <i class='bx bx-list-ul icon'></i>
                             <span class="text nav-text">Hobbies</span>
                         </a>
@@ -88,7 +89,7 @@
     </nav>
 
     <!-- Home Section -->
-    <section class="home hidden">
+    <section id="Inicio" class="home ">
         <div class="home-content">
             <div class="text">
                 <h1>Dainer Samuel Florian Arroyo<br>
@@ -103,7 +104,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about hidden">
+    <section id="Acerca-de-mi" class="about ">
         <div class="about-container">
             <div class="row">
                 <div class="sect-title">
@@ -113,7 +114,7 @@
             </div>
             <div class="about-text">                
                 <div class="details">
-                    <p>Mi nombre es Dainer Samuel Florian Arroyo y estudio <span>Ingeniería de Software</span>.
+                    <p>Mi nombre es Dainer Samuel Florian Arroyo y estudio <label>Ingeniería de Software</label>.
                         Tengo 18 años, nací el 05 de Junio del 2005 en Cartagena de Indias. Me
                         entusiasma el desarrollo de software. Desde joven, he demostrado gran
                         interés por la informática y la programación, por lo que decidí
@@ -124,19 +125,19 @@
                     <ul>
                         <h3>Más información:</h3>
                         <li>
-                            <span class="info">Nacionalidad: </span>Colombiano.
+                            <label class="info">Nacionalidad: </label>Colombiano.
                         </li>
                         <li>
-                            <span class="info">Dirección: </span>Urb. Los Cerezos.                        
+                            <label class="info">Dirección: </label>Urb. Los Cerezos.                        
                         </li>
                         <li>
-                            <span class="info">Teléfono: </span>+57 311 714 1048
+                            <label class="info">Teléfono: </label>+57 311 714 1048
                         </li>
                         <li>
-                            <span class="info">Estado: </span>En busca de Empleo.
+                            <label class="info">Estado: </label>En busca de Empleo.
                         </li>
                         <li>
-                            <span class="info">E-mail: </span><a href="mailto:florianarroyo15@gmail.com">florianarroyo15@gmail.com</a>
+                            <label class="info">E-mail: </label><a href="mailto:florianarroyo15@gmail.com">florianarroyo15@gmail.com</a>
                         </li>
                     </ul>
                 </div>               
@@ -145,7 +146,7 @@
     </section>
 
     <!-- Formation Section -->
-    <section class="format hidden">
+    <section id="Formacion-Academica" class="format ">
         <div class="container">
             <div class="row">
                 <div class="title">
@@ -155,7 +156,7 @@
                 <div class="stage">
                     <div class="escuela">
                         <h3>Escuela:</h3>
-                        <p>Estudié en el <span>Colegio Militar Almirante Colón</span>, las áreas de estudio
+                        <p>Estudié en el <label>Colegio Militar Almirante Colón</label>, las áreas de estudio
                             en las que más destaqué fueron matemáticas, disfrutando cada desafío 
                             que se presentaba en esta disciplina. Informática, comprendiendo lo esencial
                             de Excel y aprendiendo a desarrollar páginas web. Inglés, aprovechando
@@ -165,7 +166,7 @@
                     <div class="univ">
                         <h3>Universitaria:</h3>
                         <p>Actualmente, me encuentro estudiando la carrera 
-                            <span>Ingenieria de Software</span> en la 
+                            <label>Ingenieria de Software</label> en la 
                             <a href="https://www.unicartagena.edu.co/" target="_blank">Universidad de Cartagena</a>, 
                             cursando quinto semestre. Esta etapa académica ha sido desafiante pero 
                             gratificante, ya que me ha permitido explorar en profundidad diversos 
@@ -180,7 +181,7 @@
     </section>
     
     <!-- EXP Lab Section -->
-    <section class="labor hidden">
+    <section id="Experiencia-Laboral"  class="labor ">
         <div class="exp-container">
             <div class="row">
                 <div class="title">
@@ -196,7 +197,7 @@
     </section>
 
     <!-- Casual Momments Section -->
-    <section class="moments hidden">
+    <section id="Momentos-Casuales" class="moments ">
         <div class="moment-container">
             <div class="row">
                 <div class="title">
@@ -238,7 +239,7 @@
     </section>
 
     <!-- Hobbies Section -->
-    <section class="hobbies">
+    <section id="Hobbies" class="hobbies ">
         <div class="hobb-container">
             <div class="row">
                 <div class="title">
@@ -289,9 +290,10 @@
         </div>
         <div id="redes" class="icon-content">
             <div>
-                <a id="git" href="mailto:florianarroyo15@gmail.com" class="span-tooltip" style="color: #24262a;">
-                    <i class='bx bxl-gmail'></i>
-                    <span>Email</span>
+                <a id="git" href="https://open.spotify.com/user/7rpubuibfdb5ucs4tiljx91qa" class="span-tooltip" 
+                    target="_blank" style="color: #1DB954;">
+                    <i class='bx bxl-spotify'></i>
+                    <span>Spotify</span>
                 </a>
             </div>
             <div>
