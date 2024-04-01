@@ -9,12 +9,12 @@
 </head>
 <body>
     <!-- Sidebar -->
-    <nav class="sidebar">
+    <nav class="sidebar close">
         <!-- Sidebar Header -->
        <header>
             <div class="logo-text">
                 <span class="image">
-                    <img src="img/logo2.png" alt="logo">
+                    <a href="#"><img src="img/logo2.png" alt="logo"></a>
                 </span>
                 <div class="text header-text">
                     <span class="name">DainerDev</span>
@@ -30,7 +30,7 @@
         <div class="menu">
             <ul class="menu-links">
                 <li class="nav-link">
-                    <a href="#">
+                    <a href="#home">
                         <i class='bx bx-home icon'></i>
                         <span class="text nav-text">Inicio</span>
                     </a>
@@ -44,7 +44,7 @@
                 <li class="nav-link">
                     <a href="#">
                         <i class='bx bx-book-bookmark icon'></i>
-                        <span class="text nav-text">Formación Académica</span>
+                        <span class="text nav-text">Formación</span>
                     </a>
                 </li>
                 <li class="nav-link">
@@ -81,7 +81,7 @@
                     <i class='bx bx-moon icon moon'></i>
                     <i class='bx bx-sun icon sun'></i>
                 </div> 
-                <span class="mode-text text">Modo Oscuro</span>
+                <span class="mode-text text">Dark Mode</span>
 
                 <div class="toggle-switch">
                     <span class="switch"></span>
@@ -94,10 +94,12 @@
     <!-- Home Screen -->
     <section class="home">
         <div class="home-content">
-            <h1>Dainer Samuel Florian Arroyo<br>
+            <div class="text">
+                <h1>Dainer Samuel Florian Arroyo<br>
                 <span>7502210020</span>
-            </h1>
-            <h2>Mi página web personal.</h2>
+                </h1>
+                <h2>Mi página web personal.</h2>
+            </div>            
             <div class="img-home">
                 <img src="img/foto fondo blanco.jpg" alt="Imagen de Portada">
             </div>
@@ -148,6 +150,8 @@
                 </div>
             </div>
         </footer>
-    </section>    
+    </section> 
+    
+    <script src="script.js"></script>
 </body>
 </html>

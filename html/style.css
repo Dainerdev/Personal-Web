@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* Diseño general */
 * {
     margin: 0;
     padding: 0;
@@ -7,28 +8,80 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: #F7FBF8;
-    min-height: 100vh;
-    overflow: hidden;
+/* Variables */
+:root {
+
+    /* Colores */
+    --body-color: #88dda31a;
+    --sidebar-color: #fff;
+    --sidebar-hover-color: #f7fbf8;
+    --primary-color: #51B872;
+    --primary-color-light: #f7fbf8;
+    --altern-color: #e6e9e7;
+    --text-color: #0A0E0B;
+    --shadow-color: #dbdbdb;
+    --redes-background-color: #f7fbf8;
+
+    /* Transiciones */
+    --trans-2s: all 0.2s ease;
+    --trans-3s: all 0.3s ease;
+    --trans-4s: all 0.4s ease;
+    --trans-5s: all 0.5s ease;
 }
 
+/* Diseño para el cuerpo de la pagina */
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    transition: var(--trans-5s);
+}
+
+/* Colores para el modo oscuro de la web */
+body.dark {
+    --body-color: #18191A;
+    --sidebar-color: #242526;
+    --sidebar-hover-color: #4a4e4c;
+    --primary-color: #3A3B3C;
+    --primary-color-light: #3A3B3C;
+    --altern-color: #e6e9e7;
+    --text-color: #ccc;
+    --shadow-color: #dbdbdb;
+}
+
+/* Diseño de las secciones */
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+/* Diseño de la seccion "home" */
+section.home .text {
+    color: var(--text-color);
+}
 
-/* Test sidebar */
+/* 
+    Diseño - Sidebar 
+*/
+
+/* Diseño para el texto del sidebar */
 .sidebar .text {
     font-size: 16px;
     font-weight: 500;
+    transition: var(--trans-3s);
+    white-space: nowrap;
+    opacity: 1;
 }
+/* Ocultar el texto al cerrar el sidebar */
+.sidebar.close .text {
+    opacity: 0;
+}
+/* Diseño de la imagen del sidebar */
 .sidebar .image {
     min-width: 60px;
     display: flex;
     align-items: center;
 }
 
+/* Diseño para el sidebar */
 .sidebar{
     position: fixed;
     top: 0;
@@ -36,16 +89,29 @@ section {
     height: 100%;
     width: 250px;
     padding: 10px 14px;
-    background: #edf1ee;
+    background: var(--sidebar-color);
+    transition: var(--trans-5s);
+    z-index: 100;
 }
+/* Tamaño al cerrarlo el sidebar */
+.sidebar.close {
+    width: 88px;
+}
+
+/* 
+    Diseño de las secciones del sidebar
+    basados en listas (li)
+*/
+
+/* Diseño general de las secciones del sidebar */
 .sidebar li {
     height: 50px;
     margin-top: 10px;
     list-style: none;
     display: flex;
     align-items: center;
-
 }
+/* Diseño de los iconos de las secciones del sidebar */
 .sidebar li .icon{
     display: flex;
     align-items: center;
@@ -53,77 +119,117 @@ section {
     min-width: 60px;
     font-size: 20px;
 }
+/* Color y tiempo de transición para las secciones del sidebar */
 .sidebar li .icon,
 .sidebar li .text{
-    color: #0A0E0B;
-    transition: .2s;
+    color: var(--text-color);
+    transition: var(--trans-2s);
 }
+/* Posicion para el header del sidebar */
 .sidebar header {
     position: relative;
 }
+/* Diseño de la imagen logo del sidebar */
 .sidebar .logo-text img{
     width: 50px;
     border-radius: 7px;
-    color: #51B872;
+    color: var(--primary-color);
     font-size: 35px;
     text-decoration: none; 
     font-weight: 700;  
 }
+/* Alineación del logo en el header del sidebar */
 .sidebar header .logo-text {
     display: flex;
     align-items: center;
-
 }
+/* Diseño del texto logo del header del sidebar */
 .sidebar .logo-text .header-text {
     display: flex;   
-    flex-direction: column;    
+    flex-direction: column;   
+    color: var(--text-color); 
 }
+/* Tamaño del texto logo del sidebar */
 .header-text .name {
     font-weight: 600;
 }
+/* Alineación del texto profesión del header sidebar */
 .header-text .profession {
     margin-top: -2px;
 }
+/* Diseño para el botón del sidebar */
 .sidebar header .altern {
     position: absolute;
-    top: 50%;
+    top: 25%;
     right: -25px;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(180deg);
     height: 25px;
     width: 25px;
-    background-color: #51B872;
+    background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: #F7FBF8;
+    color: var(--primary-color-light);
     font-size: 22px;
+    transition: var(--trans-3s);
+    cursor: pointer;
 }
+/* Alienación del botón al cerrar el sidebar */
+.sidebar.close header .altern {
+    transform: translateY(-10%);
+}
+/* Rotación del botón al abrir el sidebar */
+.sidebar header .altern {
+    transform: rotate(180deg);
+    color: var(--primary-color-light);
+}
+/* Alternar el color del botón del sidebar */
+body.dark .sidebar header .altern {
+    color: var(--text-color);
+}
+/* Distancia del menu del sidebar del header */
+.sidebar .menu {
+    margin-top: 35px;
+}
+
+/* Diseño de las referencias de las secciones del sidebar */
 .sidebar li a{
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     text-decoration: none;
-    transition: .3s;
+    transition: var(--trans-3s);
 }
+/* Diseño del hover de las referencias de las secciones del sidebar */
 .sidebar li a:hover {
-    background-color: #8dc79f;
+    background: var(--sidebar-hover-color); 
     border-radius: 7px;
 }
+/* Color del hover de los iconos y textos de las secciones del sidebar */
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text {
-    color: #F7FBF8;
+    color: var(--text-color);
+}
+/*  Color del hover de los iconos y textos 
+    de las secciones del sidebar en el dark mode 
+*/
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
 }
 
 .sidebar .menu-bar {
-    height: calc(100% - 70px);
+    height: calc(100% - 60px); /* Altura del switch mode */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .menu-bar .mode {
-    background-color: #F7FBF8;
+    position: relative;
+    background: var(--sidebar-hover-color);
+    border-radius: 6px;    
 }
 .menu-bar .mode .sun-moon {
     height: 50px;
@@ -133,44 +239,71 @@ section {
 }
 .menu-bar .mode i {
     position: absolute;
+    transition: var(--trans-3s);
 }
 .menu-bar .mode i.sun {
     opacity: 0;
 }
+
+body.dark .menu-bar .mode i.sun {
+    opacity: 1;
+}
+body.dark .menu-bar .mode i.moon {
+    opacity: 0;
+}
+
 .menu-bar .mode .toggle-switch {
+    position: absolute;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    min-width: 60px;    
+    min-width: 60px;  
+    cursor: pointer; 
+    border-radius: 6px;
+    transition: var(--trans-5s);
 }
 .toggle-switch .switch {
     position: relative;
     height: 22px;
     width: 44px;
     border-radius: 25px;
-    background-color: #F7FBF8;
+    background: var(--altern-color);
 }
-
-
-
-
-
-.toggle-switch .switch{
-
+.switch::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background: var(--primary-color-light);
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);    
+    transition: var(--trans-3s);
 }
-
-
-
-
+body.dark .switch::before {
+    left: 24px;
+}
 
 .home {
+    position: relative;
+    left: 88px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 10%;
     height: 100vh;
+    width: calc(100% -250px);
+    background: var(--body-color);
+    transition: var(--trans-5s);
 }
+.sidebar.close ~ .home {
+    left: 88px;    
+    width: calc(100% -88px);
+}
+
 
 .home-content {
     width: 100%;
@@ -195,18 +328,17 @@ section {
     float: right;
     margin-top: -20%;
     border-radius: 40px;
-    box-shadow: 0 0 20px 5px #8dc79f;
+    box-shadow: 0 0 20px 5px var(--shadow-color);
 }
 
 .contact, .contact a{
     text-decoration: none;
-    color: #0A0E0B;
+    color: var(--text-color);
     font-size: 20px;
 }
 /* Sidebar fin */
 
 /* Footer */
-
 .icon-content a {
     display: inline-flex;
     width: 50px;
@@ -214,10 +346,10 @@ section {
     border-radius: 100%;
     justify-content: center;
     align-items: center;
-    background-color: #F7FBF8;
+    background: var(--redes-background-color);
     position: relative;
     text-decoration: none;
-    box-shadow: 4px 4px 4px 0 #dbdbdb;
+    box-shadow: 4px 4px 4px 0 var(--shadow-color);
 }
 
 .span-tooltip > i {
@@ -234,14 +366,14 @@ section {
     width: fit-content;
     font-size: small;
     font-weight: 600;
-    color: #0A0E0B;
+    color: var(--text-color);
     background-color: inherit;
     padding: 3px 10px;
     border-radius: 4px;
     bottom: 100%;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.2s ease;
+    transition: var(--trans-2s);
 }
   
 .span-tooltip > span::before {
@@ -267,8 +399,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%; 
-    height: auto; 
-    background-color: #edf1ee;
+    height: auto;
 }
 
 div[id="contact"] {
