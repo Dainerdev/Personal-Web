@@ -761,8 +761,12 @@ div[id="contact"] {
     padding: 3vh;
 }
 
-footer span {    
+footer span {
     font-weight: 600;
+}
+footer .contact .copyright{
+    margin-top: 5px;
+    font-size: 16px;
 }
 
 div[id="redes"] {
